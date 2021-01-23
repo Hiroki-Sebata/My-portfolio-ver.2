@@ -1,0 +1,223 @@
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+html,body{
+    width: 1400px;
+    height: auto;
+    background-color: #475240;
+
+}
+
+.container img{
+    max-width: 1400px;
+    border: solid 5px whitesmoke;
+    border-radius: 15px;
+}
+header h1{
+    font-size: 50px;
+    margin-top: 40px;
+
+}
+header{
+    width: 110%;
+    height: 170px;
+    color: whitesmoke;
+    position: fixed;
+    z-index:2;
+    background-color: black;
+    display: flex;
+    text-align: center;
+    justify-content: space-around; 
+    margin-top: -20px;
+    margin-left: -20px;
+}
+
+
+/**--------------------------------------
+        NAV
+------------------------------------**/
+header li{
+    display: inline-block;
+    margin-top: 50px;
+    
+}
+header li a{
+    background-color: transparent;
+    color: whitesmoke;
+    text-decoration: none;
+    justify-content: space-between;
+
+}
+
+.nav2{
+    margin-top: 400px;
+    display: fixed;
+
+}
+
+/**------------------------------------
+
+main
+
+----------------------------------**/
+main{
+    top: 170px;
+    position: relative;
+    text-align: center;
+    z-index:1;
+}
+
+ 
+.container h1{
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 110px;
+    font-size: 85px;
+    font-family: 'Gravitas One', cursive;
+    color: white;
+
+    transition: color 1s ease-in-out 2s ;
+}
+.container h2{
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 600px;
+    font-size: 60px;
+    font-family: 'Gravitas One', cursive;
+    color: white;
+    opacity: 1;
+	animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+}
+.container p{
+    z-index: 3;
+    position: absolute;
+    width: 95%;
+    text-align: right;
+    margin-top: 790px;
+    font-size: 30px;
+    color: white;
+    }
+/** ------------------------------------------
+        Profile-1
+---------------------------------------**/
+.profile{
+    display: inline-flex;
+    text-align: center;
+    justify-content: space-between;
+}    
+.profile img{
+    rotate: right;
+    width: 400px;
+    padding: 10px;
+    height: auto;
+    border: transparent 1px;
+    border-radius: 10px;
+
+}
+.profile-1{
+    width: 600px;
+    height: auto;
+    border: solid 5px white;
+    border-radius: 10px;
+    transition: width  2s ease-in-out, height 2s ease-in-out;
+    background-color: #DAEFCB;
+
+}
+
+.profile-1:hover{
+    width: 750px;
+    height: auto;
+}
+.profile-1 li{
+    list-style-type: none;
+}
+.profile-1 h3, li{
+    font-family: 'Bodoni Moda', serif;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 140px;
+}
+
+
+/** -----------------------------------------------
+        ABOUT GOES HERE 
+-----------------------------------------------**/
+#about{
+    max-width: 800px;
+    height: auto;
+    background-color: #D0E5C1;
+    border: solid 4px white;
+    border-radius: 10px;;
+}
+#about h3{
+    margin-left: 30px;
+    padding: 10px;
+    font-size: 30px;
+    font-family: 'Gravitas One', cursive;
+    text-align: left;
+    transition: color 0.5s ease-in-out, border 10s ease-in-out;
+}
+#about h3:hover{
+    color: whitesmoke;
+}
+#about p{
+    font-size: 25px;
+    text-align: left;
+    padding: 20px;
+    line-height: 30px;
+}
+#about p::first-letter{
+    font-size: 50px;
+}
+
+/**-------------------------------------------------
+        SIDE Bar GOES here
+-----------------------------------------------**/
+.side-bar {
+    width: 1470px;
+    height:170px;
+    display: flex;
+    position:fixed;
+    text-align: center;
+    margin-left: -30px;
+
+    background-color: black ;
+    z-index: 3;
+    bottom : 0;
+    justify-content: space-around;
+    opacity: 0;
+    transition: opacity 0.7s 
+
+
+}
+
+.side-bar:hover{
+    opacity: 1;
+}
+.side-bar p{
+    color: whitesmoke;
+    font-weight: bold;
+
+}
+.block1, .block2, .block3 {
+    width: 200px;
+}
+.block1 {
+    margin-top: -20px;
+}
+
+
+
